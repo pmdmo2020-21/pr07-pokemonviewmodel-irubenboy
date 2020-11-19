@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_width_player1">262dp</dimen>
+    <dimen name="margin_height_player1">200dp</dimen>
+    <dimen name="imgWidthSelection">116dp</dimen>
+    <dimen name="imgHeightSelection">100dp</dimen>
+</resources>

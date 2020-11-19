@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.selection.SelectionActivity">
+
+    <ImageView
+        android:id="@+id/imgPokemon1"
+        android:layout_width="@dimen/imgWidthSelection"
+        android:layout_height="@dimen/imgHeightSelection"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/imgPokemon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/bulbasur" />
+
+    <RadioButton
+        android:id="@+id/rdbPokemon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPokemon1"
+        tools:text="Bulbasur" />
+
+    <ImageView
+        android:id="@+id/imgPokemon2"
+        android:layout_width="@dimen/imgWidthSelection"
+        android:layout_height="@dimen/imgHeightSelection"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/imgPokemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgPokemon1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/giratina" />
+
+    <RadioButton
+        android:id="@+id/rdbPokemon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/rdbPokemon1"
+        app:layout_constraintTop_toBottomOf="@+id/imgPokemon2"
+        tools:text="Giratina" />
+
+    <ImageView
+        android:id="@+id/imgPokemon3"
+        android:layout_width="@dimen/imgWidthSelection"
+        android:layout_height="@dimen/imgHeightSelection"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/imgPokemon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdbPokemon1"
+        tools:src="@drawable/cubone" />
+
+    <RadioButton
+        android:id="@+id/rdbPokemon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPokemon3"
+        tools:text="Cubone" />
+
+    <ImageView
+        android:id="@+id/imgPokemon4"
+        android:layout_width="@dimen/imgWidthSelection"
+        android:layout_height="@dimen/imgHeightSelection"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgPokemon3"
+        app:layout_constraintTop_toBottomOf="@+id/rdbPokemon2"
+        tools:src="@drawable/gyarados"
+        android:contentDescription="@string/imgPokemon" />
+
+    <RadioButton
+        android:id="@+id/rdbPokemon4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toEndOf="@+id/rdbPokemon3"
+        app:layout_constraintTop_toBottomOf="@+id/imgPokemon4"
+        tools:text="Gyrados" />
+
+    <ImageView
+        android:id="@+id/imgPokemon5"
+        android:layout_width="@dimen/imgWidthSelection"
+        android:layout_height="@dimen/imgHeightSelection"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/imgPokemon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdbPokemon3"
+        tools:src="@drawable/feebas" />
+
+    <RadioButton
+        android:id="@+id/rdbPokemon5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPokemon5"
+        tools:text="Feebas" />
+
+    <ImageView
+        android:id="@+id/imgPokemon6"
+        android:layout_width="@dimen/imgHeightSelection"
+        android:layout_height="@dimen/imgHeightSelection"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/imgPokemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toEndOf="@+id/imgPokemon5"
+        app:layout_constraintTop_toBottomOf="@+id/rdbPokemon4"
+        tools:src="@drawable/pikachu" />
+
+    <RadioButton
+        android:id="@+id/rdbPokemon6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/rdbPokemon5"
+        app:layout_constraintTop_toBottomOf="@+id/imgPokemon6"
+        tools:text="Pikachu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

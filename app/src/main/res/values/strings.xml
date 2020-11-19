@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Pokemon Battle</string>
+    <string name="app_name">Pokemon battle simulator</string>
+    <string name="player2">Pikachu</string>
+    <string name="lblInfo">Select your opponents and start the fight to see who is the winner.</string>
+    <string name="btnStartBattle">Start the fight</string>
+    <string name="lblStart">And the winner is...</string>
+    <string name="imgPlayer1">Primer Jugador</string>
+    <string name="imgVersus">Versus</string>
+    <string name="imgPlayer2">Segundo Jugador</string>
+    <string name="winner">Ganador</string>
+    <string name="imgPokemon">Pokemon</string>
+    <string name="bulbasur">Bulbasur</string>
+    <string name="cubone">Cubone</string>
+    <string name="feebas">Feebas</string>
+    <string name="giratina">Giratina</string>
+    <string name="gyrados">Gyrados</string>
+    <string name="pikachu">Pikachi</string>
 </resources>
