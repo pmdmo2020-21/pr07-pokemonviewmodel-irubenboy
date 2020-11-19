@@ -1,7 +1,7 @@
-package es.iessaladillo.pedrojoya.intents.data.local
+package com.ruben.pokemonbattle.local
 
-import es.iessaladillo.pedrojoya.intents.R
-import es.iessaladillo.pedrojoya.intents.data.local.model.Pokemon
+import com.ruben.pokemonbattle.R
+import com.ruben.pokemonbattle.local.model.Pokemon
 import kotlin.random.Random
 
 object Database : DataSource{

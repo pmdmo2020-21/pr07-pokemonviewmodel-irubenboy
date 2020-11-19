@@ -1,4 +1,4 @@
-package es.iessaladillo.pedrojoya.intents.data.local.model
+package com.ruben.pokemonbattle.local.model
 
 
 class Pokemon(

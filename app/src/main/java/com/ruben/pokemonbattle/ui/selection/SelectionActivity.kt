@@ -1,4 +1,4 @@
-package es.iessaladillo.pedrojoya.intents.ui.selection
+package com.ruben.pokemonbattle.ui.selection
 
 import android.content.Context
 import android.content.Intent
@@ -7,8 +7,8 @@ import android.widget.ImageView
 import android.widget.RadioButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
-import es.iessaladillo.pedrojoya.intents.data.local.Database
-import es.iessaladillo.pedrojoya.intents.databinding.SelectionActivityBinding
+import com.ruben.pokemonbattle.local.Database
+import com.ruben.pokemonbattle.databinding.SelectionActivityBinding
 
 class SelectionActivity : AppCompatActivity() {
 

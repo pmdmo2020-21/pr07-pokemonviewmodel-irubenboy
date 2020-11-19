@@ -1,4 +1,4 @@
-package es.iessaladillo.pedrojoya.intents.ui.battle
+package com.ruben.pokemonbattle.ui.battle
 
 import android.app.Activity
 import android.content.Intent
@@ -8,13 +8,13 @@ import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
-import es.iessaladillo.pedrojoya.intents.data.local.Database
-import es.iessaladillo.pedrojoya.intents.data.local.model.Pokemon
-import es.iessaladillo.pedrojoya.intents.databinding.BattleActivityBinding
-import es.iessaladillo.pedrojoya.intents.ui.selection.SelectionActivity
-import es.iessaladillo.pedrojoya.intents.ui.selection.SelectionActivity.Companion.EXTRA_CONTAINER
-import es.iessaladillo.pedrojoya.intents.ui.selection.SelectionActivity.Companion.EXTRA_ID
-import es.iessaladillo.pedrojoya.intents.ui.winner.WinnerActivity
+import com.ruben.pokemonbattle.databinding.BattleActivityBinding
+import com.ruben.pokemonbattle.local.Database
+import com.ruben.pokemonbattle.local.model.Pokemon
+import com.ruben.pokemonbattle.ui.selection.SelectionActivity
+import com.ruben.pokemonbattle.ui.selection.SelectionActivity.Companion.EXTRA_CONTAINER
+import com.ruben.pokemonbattle.ui.selection.SelectionActivity.Companion.EXTRA_ID
+import com.ruben.pokemonbattle.ui.winner.WinnerActivity
 
 class BattleActivity : AppCompatActivity() {
 

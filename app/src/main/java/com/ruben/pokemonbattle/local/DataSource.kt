@@ -1,6 +1,6 @@
-package es.iessaladillo.pedrojoya.intents.data.local
+package com.ruben.pokemonbattle.local
 
-import es.iessaladillo.pedrojoya.intents.data.local.model.Pokemon
+import com.ruben.pokemonbattle.local.model.Pokemon
 
 // IMPORTANTE: NO TOCAR
 interface DataSource {

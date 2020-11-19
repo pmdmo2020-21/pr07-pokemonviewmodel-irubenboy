@@ -1,13 +1,13 @@
-package es.iessaladillo.pedrojoya.intents.ui.winner
+package com.ruben.pokemonbattle.ui.winner
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
-import es.iessaladillo.pedrojoya.intents.data.local.Database
-import es.iessaladillo.pedrojoya.intents.data.local.model.Pokemon
-import es.iessaladillo.pedrojoya.intents.databinding.WinnerActivityBinding
+import com.ruben.pokemonbattle.local.Database
+import com.ruben.pokemonbattle.local.model.Pokemon
+import com.ruben.pokemonbattle.databinding.WinnerActivityBinding
 
 class WinnerActivity : AppCompatActivity() {
 
