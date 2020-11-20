@@ -3,6 +3,7 @@ package com.ruben.pokemonbattle.ui.winner
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import com.ruben.pokemonbattle.local.Database
@@ -11,42 +12,43 @@ import com.ruben.pokemonbattle.databinding.WinnerActivityBinding
 
 class WinnerActivity : AppCompatActivity() {
 
-    private lateinit var winnerBinding: WinnerActivityBinding
-    private var id: Long = 0
+    private val winnerViewModel: WinnerActivityViewModel by viewModels()
+    private val winnerBinding: WinnerActivityBinding by lazy{WinnerActivityBinding.inflate(layoutInflater)}
     private val db = Database
-    private lateinit var winner: Pokemon
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        winnerBinding = WinnerActivityBinding.inflate(layoutInflater)
         setContentView(winnerBinding.root)
         getData()
-        setupViews()
+        observerWinner()
     }
 
-    private fun setupViews() {
-        init()
+    private fun observerWinner() {
+        winnerViewModel.winnerPokemon.observe(this) {showWinner(it)}
     }
 
-    private fun init(){
-        winner = db.getPokemonById(id)!!
-        winnerBinding.imgWinner.setImageResource(winner.photo)
-        winnerBinding.txtWinner.text = winner.name
+    private fun showWinner(p: Pokemon) {
+        winnerBinding.imgWinner.setImageResource(p.photo)
+        winnerBinding.txtWinner.text = p.name
     }
 
     private fun getData() {
-        if (intent == null || !intent.hasExtra(EXTRA_ID)) {
+        if (intent == null || !intent.hasExtra(EXTRA_POKEMON)) {
             throw RuntimeException(
                     "WinnerActivity needs to receive id as extras")
         }
-        id = intent.getLongExtra(EXTRA_ID, 0)
+        val pokemon: Pokemon? = intent.getParcelableExtra(EXTRA_POKEMON)
+
+        if(pokemon != null){
+            winnerViewModel.changeWinnerPlayer(pokemon)
+        }
     }
 
     companion object{
-        const val EXTRA_ID = "EXTRA ID"
+        private const val EXTRA_POKEMON = "EXTRA POKEMON"
 
-        fun newIntent(context: Context, id: Long) =
+        fun newIntent(context: Context, pokemon: Pokemon) =
             Intent(context, WinnerActivity::class.java)
-                    .putExtras(bundleOf(EXTRA_ID to id))
+                    .putExtras(bundleOf(EXTRA_POKEMON to pokemon))
     }
 }

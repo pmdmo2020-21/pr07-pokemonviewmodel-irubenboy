@@ -11,13 +11,13 @@
         android:theme="@style/Theme.PokemonBattle">
         <activity
             android:name=".ui.selection.SelectionActivity"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".ui.winner.WinnerActivity"
-            android:screenOrientation="portrait" />
+            />
         <activity
             android:name=".ui.battle.BattleActivity"
-            android:screenOrientation="portrait">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
